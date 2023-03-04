@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>check</title>
+    <link rel="stylesheet" type="text/css" href="fixing.css" media="screen">
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <div class="vertical-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col">
+                    <h1 class="text-center display-4">Calculate Download Time</h1>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row justify-content-center">
+                <h2>
+                    <p class="lead text-center">Enter the speed and size of your download</p>
+                </h2>
+            </div>
+            <form>
+                <div class="form-group row justify-content-center">
+                    <div class="col-md-7">
+                        <div class="input-group">
+                            <input type="number" id="speed" class="form-control form-control-lg" placeholder="Speed">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary dropdown-toggle" id="speed-button"
+                                    type="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">Mbps</button>
+                                <div class="dropdown-menu" id="speed-dropdown">
+                                    <a class="dropdown-item" href="#">Kbps</a>
+                                    <a class="dropdown-item" href="#">Mbps</a>
+                                    <a class="dropdown-item" href="#">Gbps</a>
+                                    <div role="separator" class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">KB/s</a>
+                                    <a class="dropdown-item" href="#">MB/s</a>
+                                    <a class="dropdown-item" href="#">GB/s</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group row  justify-content-center">
+                    <div class="col-md-7">
+                        <div class="input-group">
+                            <input type="number" id="size" class="form-control form-control-lg" placeholder="Size">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary dropdown-toggle" id="size-button" type="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">GB</button>
+                                <div class="dropdown-menu" id="size-dropdown">
+                                    <a class="dropdown-item" href="#">KB</a>
+                                    <a class="dropdown-item" href="#">MB</a>
+                                    <a class="dropdown-item" href="#">GB</a>
+                                    <a class="dropdown-item" href="#">TB</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="row justify-content-center">
+                <button type="button" id="calculate" class="btn btn-lg btn-primary">Calculate</button>
+            </div>
+            <div class="row justify-content-center">
+                <div class="time-output">
+                    <h4 class="text-center" id="time"></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
